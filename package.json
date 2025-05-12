@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && nodemon server.js",
+    "client": "cd frontend && npm run dev"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "concurrently": "^9.1.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0"
+  }
+}
